@@ -49,7 +49,7 @@
 <body>
 <div class="container">
   <div class="video">
-    <video width="100%" controls>
+    <video id="myVideo" width="100%" autoplay defaultMuted playsinline controls>
       <source src="happy_video.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -64,5 +64,9 @@
     can't take my eyes off you, I always want to see you, touch you, feel you and love you over and over again.
   </div>
 </div>
+  <script> 
+  document.addEventListener('DOMcontentLoaded' , (event) => {var video = document.getElementById('myVideo'); video.play();
+                                                            });
+  </script>
 </body>
 </html>
